@@ -72,7 +72,7 @@ module.exports = exports =
   pacResult: (proxy) ->
     if proxy
       if proxy.scheme == 'socks5'
-        "SOCKS5 #{proxy.host}:#{proxy.port}; SOCKS #{proxy.host}:#{proxy.port}"
+        "SOCKS5 #{proxy.host}:#{proxy.port}"
       else
         "#{exports.pacProtocols[proxy.scheme]} #{proxy.host}:#{proxy.port}"
     else
